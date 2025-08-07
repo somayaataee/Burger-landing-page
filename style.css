@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+   background-color: black;
+   color: white;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.stars{
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: white;
+    box-shadow: 0 0 10px 2px white;
+    
+}
+.navbar{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 40px;
+}
+ img{
+    width: 80px;
+    height: 80px;
+    justify-content:end;
+    transition: all 1s ease;
+    animation: fadeInup 1s ease-in-out  backwards ;
+}
+.nav-center a,.social a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    animation: fadeInFromTop 0.6s ease  forwards;
+    opacity: 0;
+}
+@keyframes fadeInFromTop{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.nav-center :nth-child(1){
+    animation-delay: 0.1s;
+}
+.nav-center :nth-child(2){
+    animation-delay: 0.2s;
+}
+.nav-center :nth-child(3){
+    animation-delay: 0.3s;
+}
+.nav-center :nth-child(){
+    animation-delay: 0.4s;
+}
+
+.nav-center a:hover,
+.social a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.text{
+    position: relative;
+    top: 5rem;
+    bottom: 5rem;
+    left: 11rem;
+    animation: fadeIn 1s ease-in-out  forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.text p{
+    width: 37%;
+}
+.btn{
+    border:1px solid white;
+    color: white;
+    border-radius: 10px;
+    margin: 30px 10px 100px 10px ;
+}
+.btn:hover{
+    color: white;
+    border: 1px solid orange;
+    background-color: orange;
+    box-shadow: 0px 0px 10px 2px orange;
+}
+.burger img{
+    border: 1px solid white;
+    position: relative;
+    top: 8.5rem;
+    left: 6rem;
+    margin: 5px;
+    
+}
+.burger img:hover{
+    transform: scale(1.1);
+    transition:  0.5s ease;
+    box-shadow: 0px 0px 10px 2px white;
+}
+
+.burger-toggeler img{
+    filter: drop-shadow(64px 90px 307px white);
+    position: absolute;
+    width:38%;
+    height: 74%;
+    left: 60rem;
+    top: 10rem;
+    animation: fadeInup 1s ease-in-out  backwards ;
+
+}
+@keyframes fadeInup {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
